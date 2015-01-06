@@ -2,27 +2,23 @@
 //  RACTestingTests.m
 //  RACTestingTests
 //
-//  Created by Damon Allison on 11/17/14.
-//  Copyright (c) 2014 Damon Allison. All rights reserved.
+//  Created by Damon Allison on 12/1/14.
+//  Copyright (c) 2014 Code42. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-@interface RACTestingTests : XCTestCase {
+@interface RACTestingTests : XCTestCase
 
-}
-
-@property (nonatomic, strong) NSString *firstName;
 @end
 
 @implementation RACTestingTests
 
-
 - (void)setUp {
     [super setUp];
-    self.firstName = nil;
+    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
@@ -30,38 +26,15 @@
     [super tearDown];
 }
 
-/// Simple property observation.
-///
-/// Note that the initial value is sent upon initial subsription.
-///
-- (void)testRACStream {
-    
-    __block NSArray *changes = [NSArray array];
-    
-    [RACObserve(self, firstName) subscribeNext:^(NSString *x) {
-        changes = [changes arrayByAddingObject:(x ? [x copy] : @"null")];
-    }];
-    
-    self.firstName = @"damon";
-    self.firstName = @"Damon";
-    
-    NSArray *expected = @[@"null", @"damon", @"Damon"];
-    XCTAssertEqualObjects(expected, changes);
-}
-
-- (void)testRACFilter {
-    
-    __block NSArray *changes = [NSArray array];
-    
-    [RACObserve(self, firstName) filter:^BOOL(NSString *newName) {
-        return [[newName lowercaseString] rangeOfString:@"damon"].location != NSNotFound;
-    }] 
-    
-}
-
 - (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+    
+}
+
+- (void)testPerformanceExample {
+    // This is an example of a performance test case.
+    [self measureBlock:^{
+        // Put the code you want to measure the time of here.
+    }];
 }
 
 @end
