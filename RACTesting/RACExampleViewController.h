@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RACExampleViewController.h
 //  RACTesting
 //
 //  Created by Damon Allison on 12/1/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface RACExampleViewController : UIViewController
 
 
 @end
