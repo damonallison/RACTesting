@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSString *firstName;
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, readonly) NSString *fullName;
+@property (nonatomic, readonly) BOOL isValid;
 
-- (RACSignal *)onUsernameChange;
-- (RACSignal *)onFullnameChange;
 @end

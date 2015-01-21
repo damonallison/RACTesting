@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Person.h"
 
 @interface RACTestingTests : XCTestCase
 
@@ -26,15 +26,30 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    
+
+- (void)testPropertyObserving {
+
+    Person *p = [[Person alloc] init];
+
+    XCTestExpectation *fName = [self expectationWithDescription:@"fName"];
+    [[RACObserve(p, firstName)
+      skip:1]
+     subscribeNext:^(NSString *firstName) {
+         XCTAssertEqualObjects(firstName, @"Damon");
+         [fName fulfill];
+    }];
+    p.firstName = @"Damon";
+    [self waitForExpectationsWithTimeout:1.0 handler:nil];
+
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testSignalMerging {
+
 }
+
+- (void)testFlattenMap {
+
+}
+
 
 @end
