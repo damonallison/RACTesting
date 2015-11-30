@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "DebugFunctions.h"
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +20,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     // Override point for customization after application launch.
+
+    [DebugFunctions printEnvironment];
+    
     return YES;
 }
 

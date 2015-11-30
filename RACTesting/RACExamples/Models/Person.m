@@ -35,21 +35,12 @@
             return isValid.boolValue != self.isValid;
         }];
         RAC(self, isValid) = validityChanged;
-
-        // Fullname signal
-        RACSignal *fullnameChanged = [RACSignal combineLatest:@[ RACObserve(self, firstName), RACObserve(self, lastName) ]
-                                                       reduce:^(NSString *fName, NSString *lName) {
-                                                           return [NSString stringWithFormat:@"%@ %@", [fName copy], [lName copy]];
-        }];
-        RAC(self, fullName) = fullnameChanged;
+        RAC(self, fullName) = [self fullnameChanged];
     }
 
     return self;
 }
 
-- (NSString *)fullName {
-    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
-}
 - (RACSignal *)usernameChanged {
     return RACObserve(self, username);
 }

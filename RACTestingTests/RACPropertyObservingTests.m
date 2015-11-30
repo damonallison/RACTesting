@@ -26,7 +26,12 @@
     [super tearDown];
 }
 
-
+/**
+ *  Shows observing to a KVO compliant class property. 
+ *  `skip:1` will skip the initial value which is sent on subscription, 
+ *  so the subscribeNext block will only be executed on subsequent property
+ *  changes.
+ */
 - (void)testPropertyObserving {
 
     Person *p = [[Person alloc] init];
@@ -40,16 +45,6 @@
     }];
     p.firstName = @"Damon";
     [self waitForExpectationsWithTimeout:1.0 handler:nil];
-
 }
-
-- (void)testSignalMerging {
-
-}
-
-- (void)testFlattenMap {
-
-}
-
 
 @end

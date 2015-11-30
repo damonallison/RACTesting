@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212B5DA01A7816AC001F11F1 /* RACSequenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 212B5D9F1A7816AC001F11F1 /* RACSequenceTests.m */; };
 		2181FF411A2D404900B1813D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181FF401A2D404900B1813D /* main.m */; };
 		2181FF441A2D404900B1813D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181FF431A2D404900B1813D /* AppDelegate.m */; };
 		2181FF471A2D404900B1813D /* RACExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181FF461A2D404900B1813D /* RACExampleViewController.m */; };
@@ -15,19 +16,15 @@
 		2181FF4F1A2D404900B1813D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2181FF4D1A2D404900B1813D /* LaunchScreen.xib */; };
 		2181FF5B1A2D404900B1813D /* RACPropertyObservingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2181FF5A1A2D404900B1813D /* RACPropertyObservingTests.m */; };
 		219C14921A6F39BF0041A212 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA37C61A65F0E600901303 /* Person.m */; };
-		219C14931A6F39D70041A212 /* RACSequenceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA37B91A65EDD900901303 /* RACSequenceExamples.m */; };
-		219C14971A6F3BAD0041A212 /* NetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C14961A6F3BAD0041A212 /* NetworkOperations.m */; };
-		219C14981A6F3BB30041A212 /* NetworkOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 219C14961A6F3BAD0041A212 /* NetworkOperations.m */; };
-		21DA37BA1A65EDD900901303 /* RACSequenceExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA37B91A65EDD900901303 /* RACSequenceExamples.m */; };
-		21DA37BC1A65EE0F00901303 /* TODO.md in Sources */ = {isa = PBXBuildFile; fileRef = 21DA37BB1A65EE0F00901303 /* TODO.md */; };
+		21A2C0161A788A23003F0F54 /* DebugFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A2C0151A788A23003F0F54 /* DebugFunctions.m */; };
+		21D413711A789B1600F0B729 /* RACStreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21D413701A789B1600F0B729 /* RACStreamTests.m */; };
 		21DA37C71A65F0E600901303 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DA37C61A65F0E600901303 /* Person.m */; };
 		2F83345540123763C93A088A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601459E16FB3320A06329A01 /* libPods.a */; };
 		7A53495A2DEFAEAB526CDC08 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 601459E16FB3320A06329A01 /* libPods.a */; };
-		E8F25437805D10848BDD6C9F /* libPods-RACTesting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35399CD50E6F10AE7269813C /* libPods-RACTesting.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2181FF551A2D404900B1813D /* PBXContainerItemProxy */ = {
+		21D0D9801A6FDABF00538ECF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2181FF331A2D404900B1813D /* Project object */;
 			proxyType = 1;
@@ -38,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		16AB6F6ECF2F2B02D643A7C0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		212B5D9F1A7816AC001F11F1 /* RACSequenceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSequenceTests.m; sourceTree = "<group>"; };
 		2181FF3B1A2D404900B1813D /* RACTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2181FF3F1A2D404900B1813D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2181FF401A2D404900B1813D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,11 +51,9 @@
 		2181FF5A1A2D404900B1813D /* RACPropertyObservingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACPropertyObservingTests.m; sourceTree = "<group>"; };
 		218606611A5B9C3100DA204D /* libPods-ReactiveCocoa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ReactiveCocoa.a"; path = "Pods/build/Debug-iphoneos/libPods-ReactiveCocoa.a"; sourceTree = "<group>"; };
 		218647A91A6F267B0010DD19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		219C14951A6F3BAD0041A212 /* NetworkOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkOperations.h; sourceTree = "<group>"; };
-		219C14961A6F3BAD0041A212 /* NetworkOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkOperations.m; sourceTree = "<group>"; };
-		21DA37B81A65EDD900901303 /* RACSequenceExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACSequenceExamples.h; sourceTree = "<group>"; };
-		21DA37B91A65EDD900901303 /* RACSequenceExamples.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACSequenceExamples.m; sourceTree = "<group>"; };
-		21DA37BB1A65EE0F00901303 /* TODO.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		21A2C0141A788A23003F0F54 /* DebugFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DebugFunctions.h; sourceTree = "<group>"; };
+		21A2C0151A788A23003F0F54 /* DebugFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DebugFunctions.m; sourceTree = "<group>"; };
+		21D413701A789B1600F0B729 /* RACStreamTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACStreamTests.m; sourceTree = "<group>"; };
 		21DA37C51A65F0E600901303 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		21DA37C61A65F0E600901303 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		21DF40C71A5B8B9F003922AC /* RACTesting.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACTesting.pch; sourceTree = "<group>"; };
@@ -74,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F83345540123763C93A088A /* libPods.a in Frameworks */,
-				E8F25437805D10848BDD6C9F /* libPods-RACTesting.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				21DA37C41A65F0B700901303 /* Models */,
-				21DA37B71A65EDA200901303 /* RACExamples */,
 				2181FF421A2D404900B1813D /* AppDelegate.h */,
 				2181FF431A2D404900B1813D /* AppDelegate.m */,
 				2181FF451A2D404900B1813D /* RACExampleViewController.h */,
@@ -124,6 +118,8 @@
 				2181FF4B1A2D404900B1813D /* Images.xcassets */,
 				2181FF4D1A2D404900B1813D /* LaunchScreen.xib */,
 				2181FF3E1A2D404900B1813D /* Supporting Files */,
+				21A2C0141A788A23003F0F54 /* DebugFunctions.h */,
+				21A2C0151A788A23003F0F54 /* DebugFunctions.m */,
 			);
 			path = RACTesting;
 			sourceTree = "<group>";
@@ -141,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				2181FF5A1A2D404900B1813D /* RACPropertyObservingTests.m */,
+				212B5D9F1A7816AC001F11F1 /* RACSequenceTests.m */,
+				21D413701A789B1600F0B729 /* RACStreamTests.m */,
 				2181FF581A2D404900B1813D /* Supporting Files */,
 			);
 			path = RACTestingTests;
@@ -154,23 +152,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		21DA37B71A65EDA200901303 /* RACExamples */ = {
-			isa = PBXGroup;
-			children = (
-				21DA37B81A65EDD900901303 /* RACSequenceExamples.h */,
-				21DA37B91A65EDD900901303 /* RACSequenceExamples.m */,
-				21DA37BB1A65EE0F00901303 /* TODO.md */,
-			);
-			path = RACExamples;
-			sourceTree = "<group>";
-		};
 		21DA37C41A65F0B700901303 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				21DA37C51A65F0E600901303 /* Person.h */,
 				21DA37C61A65F0E600901303 /* Person.m */,
-				219C14951A6F3BAD0041A212 /* NetworkOperations.h */,
-				219C14961A6F3BAD0041A212 /* NetworkOperations.m */,
 			);
 			name = Models;
 			path = RACExamples/Models;
@@ -232,7 +218,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2181FF561A2D404900B1813D /* PBXTargetDependency */,
+				21D0D9811A6FDABF00538ECF /* PBXTargetDependency */,
 			);
 			name = RACTestingTests;
 			productName = RACTestingTests;
@@ -245,7 +231,7 @@
 		2181FF331A2D404900B1813D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Code42;
 				TargetAttributes = {
 					2181FF3A1A2D404900B1813D = {
@@ -363,13 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DA37BC1A65EE0F00901303 /* TODO.md in Sources */,
 				2181FF471A2D404900B1813D /* RACExampleViewController.m in Sources */,
 				21DA37C71A65F0E600901303 /* Person.m in Sources */,
+				21A2C0161A788A23003F0F54 /* DebugFunctions.m in Sources */,
 				2181FF441A2D404900B1813D /* AppDelegate.m in Sources */,
 				2181FF411A2D404900B1813D /* main.m in Sources */,
-				219C14971A6F3BAD0041A212 /* NetworkOperations.m in Sources */,
-				21DA37BA1A65EDD900901303 /* RACSequenceExamples.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,9 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219C14981A6F3BB30041A212 /* NetworkOperations.m in Sources */,
+				212B5DA01A7816AC001F11F1 /* RACSequenceTests.m in Sources */,
+				21D413711A789B1600F0B729 /* RACStreamTests.m in Sources */,
 				219C14921A6F39BF0041A212 /* Person.m in Sources */,
-				219C14931A6F39D70041A212 /* RACSequenceExamples.m in Sources */,
 				2181FF5B1A2D404900B1813D /* RACPropertyObservingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,10 +371,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2181FF561A2D404900B1813D /* PBXTargetDependency */ = {
+		21D0D9811A6FDABF00538ECF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2181FF3A1A2D404900B1813D /* RACTesting */;
-			targetProxy = 2181FF551A2D404900B1813D /* PBXContainerItemProxy */;
+			targetProxy = 21D0D9801A6FDABF00538ECF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -434,6 +418,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -505,6 +490,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damonallison.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -522,6 +508,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damonallison.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -542,6 +529,7 @@
 				);
 				INFOPLIST_FILE = RACTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damonallison.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -558,6 +546,7 @@
 				GCC_PREFIX_HEADER = RACTesting.pch;
 				INFOPLIST_FILE = RACTestingTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.damonallison.com.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
